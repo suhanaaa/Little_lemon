@@ -1,0 +1,53 @@
+/* Testimonials.css */
+
+/* Testimonials section container */
+.testimonials-section {
+  padding: 20px 18%;
+
+  text-align: center;
+  background-color: var(--secondary-color-3);
+  color: var(--primary-text);
+}
+
+/* Testimonials heading styles */
+h3 {
+  margin-bottom: 20px;
+  color: var(--secondary-text);
+}
+
+/* Testimonials container */
+.testimonials-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  width: 230px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 18px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color-3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile picture styles */
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Review text styles */
+.review {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Name styles */
+.name {
+  font-weight: bold;
+}

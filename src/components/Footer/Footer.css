@@ -7,8 +7,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px 200px 20px 0px;
-  color: var(--secondary-text);
-  background-color: var(--secondary-color-3);
+  background-color: var(--secondary-text);
+  color: var(--secondary-color-3);
 }
 
 /* Logo container */
@@ -25,10 +25,10 @@ img {
 
 /* Info containers container */
 .info-container {
-  flex: 1; /* Take up available space */
+  flex: 1; 
   display: flex;
-  justify-content: space-around; /* Adjust spacing between info elements */
-  margin: 0 60px 0 0px; /* Margin on left and right */
+  justify-content: space-around;
+  margin: 0 60px 0 0px; 
   padding-right: 0;
 }
 
@@ -36,7 +36,7 @@ img {
 .info,
 .info-two {
   flex: 1;
-  margin: 0 40px; /* Adjusted margin for each info element */
+  margin: 0 40px;
 }
 
 /* Style for UL */
@@ -94,13 +94,26 @@ a.instagram {
   color: purple;
 }
 
+.footer-text {
+  background-color: var(--secondary-text);
+}
+
+.footer-text p {
+  text-align: center;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 15px;
+
+  color: var(--secondary-color-3);
+}
+
 /* Responsive adjustments */
 @media only screen and (max-width: 1023px) {
   footer {
     padding: 20px 70px 20px 20px;
   }
   .social {
-    font-size: 0.8rem; /* Decrease social icon size */
+    font-size: 0.8rem; 
   }
 
   a.social {
@@ -109,7 +122,7 @@ a.instagram {
 
   .info,
   .info-two {
-    margin: 10px; /* Adjusted margin for medium screens */
+    margin: 10px;
   }
 
   /* Font size for list items in UL for medium screens */
@@ -134,6 +147,5 @@ a.instagram {
 
   .info,
   .info-two {
-    margin-top: 10px; /* Adjusted margin for medium screens */
-  }
+    margin-top: 10px;
 }
