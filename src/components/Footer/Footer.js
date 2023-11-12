@@ -21,57 +21,58 @@ const Footer = () => {
           <div className="info">
             <ul className="first-ul">
               <li>
-                <h4>Heading</h4>
+                <h4>About Us</h4>
               </li>
-              <li>Privacy</li>
-              <li>Sub Heading</li>
-              <li>Connect</li>
+              <li>Privacy Policy</li>
+              <li>Terms and Conditions</li>
+              <li>Contact Us</li>
             </ul>
           </div>
 
           <div className="info">
             <ul className="first-ul">
               <li>
-                <h4>Heading</h4>
+                <h4>Services</h4>
               </li>
-              <li>Privacy</li>
-              <li>Sub Heading</li>
-              <li>Connect</li>
+              <li>Menu</li>
+              <li>Specials</li>
+              <li>Events</li>
             </ul>
           </div>
+
           <div className="info-two">
             <ul className="second-ul">
               <li>
-                <h4>Heading</h4>
+                <h4>Contact Information</h4>
               </li>
-              <li>Privacy</li>
-              <li>Sub Heading</li>
-              <li>Connect</li>
+              <li>123 Main Street, Cityville, State, Zip</li>
+              <li>Phone: (555) 123-4567</li>
+              <li>Email: info@littlelemon.com</li>
             </ul>
           </div>
         </div>
 
         <div className="social-container">
           <a
-            href="https://www.youtube.com/c/jamesqquick"
+            href="https://www.youtube.com/c/littlelemon"
             className="youtube social"
           >
             <FontAwesomeIcon icon={faYoutube} size="2x" />
           </a>
           <a
-            href="https://www.facebook.com/learnbuildteach/"
+            href="https://www.facebook.com/littlelemon"
             className="facebook social"
           >
             <FontAwesomeIcon icon={faFacebook} size="2x" />
           </a>
           <a
-            href="https://www.twitter.com/jamesqquick"
+            href="https://www.twitter.com/littlelemon"
             className="twitter social"
           >
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
           <a
-            href="https://www.instagram.com/learnbuildteach"
+            href="https://www.instagram.com/littlelemon"
             className="instagram social"
           >
             <FontAwesomeIcon icon={faInstagram} size="2x" />

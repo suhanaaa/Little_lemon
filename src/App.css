@@ -106,7 +106,6 @@ p {
   flex-direction: column;
 }
 
-/* Responsive adjustments */
 @media only screen and (max-width: 1023px) {
   .btn {
     font-size: 0.8rem;

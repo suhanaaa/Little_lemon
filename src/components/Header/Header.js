@@ -1,13 +1,21 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import HeaderImage from "../../assets/icons_assets/restauranfood.jpg";
 import GreekSalad from "../../assets/icons_assets/greek salad.jpg";
 import Bruchetta from "../../assets/icons_assets/bruchetta.svg";
 import LemonDessert from "../../assets/icons_assets/lemon dessert.jpg";
 import "./Header.css";
+import Meatballs from "../../assets/icons_assets/meatballs.jpg";
+
 import Testimonials from "../Testimonials/Testimonials";
 import About from "../About/About";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const handleReserveClick = () => {
+    navigate("/booking");
+  };
+
   return (
     <>
       <header className="hero-section">
@@ -20,7 +28,9 @@ const Header = () => {
             a contemporary touch, inviting you to savor a unique culinary
             journey.
           </p>
-          <button className="btn">Reserve a table</button>
+          <button className="btn" onClick={handleReserveClick}>
+            Reserve a table
+          </button>
         </div>
         <div className="Image">
           <img src={HeaderImage} alt="" width={300} />
@@ -42,7 +52,7 @@ const Header = () => {
             <p>
               The famous greek salad of crispy lettuce, peppers, olives and our
               Chicago style feta cheese, garnished with crunchy garlic and
-              rosemarry croutons{" "}
+              rosemarry croutons.
             </p>
 
             <h4>Order a delivery</h4>
@@ -54,9 +64,22 @@ const Header = () => {
               <p>$5.99</p>
             </div>
             <p>
-              The famous greek salad of crispy lettuce, peppers, olives and our
-              Chicago style feta cheese, garnished with crunchy garlic and
-              rosemarry croutons
+              Savor the delightful taste of our Bruschetta, a classic Italian
+              antipasto. Each bite unveils a symphony of flavors as ripe
+              tomatoes, fresh basil, and garlic.
+            </p>
+            <h4>Order a delivery</h4>
+          </div>
+          <div className="card">
+            <img src={Meatballs} alt="Meatballs" width={300} />
+            <div className="first-row">
+              <h4>Meatballs</h4>
+              <p>$6.00</p>
+            </div>
+            <p>
+              Indulge in the savory goodness of our Meatballs, crafted with a
+              blend of premium ground meat, aromatic herbs, and a secret mix of
+              spices.
             </p>
             <h4>Order a delivery</h4>
           </div>
@@ -67,22 +90,9 @@ const Header = () => {
               <p>$6.00</p>
             </div>
             <p>
-              The famous greek salad of crispy lettuce, peppers, olives and our
-              Chicago style feta cheese, garnished with crunchy garlic and
-              rosemarry croutons
-            </p>
-            <h4>Order a delivery</h4>
-          </div>
-          <div className="card">
-            <img src={LemonDessert} alt="Lemon Desset" />
-            <div className="first-row">
-              <h4>Lemon Dessert</h4>
-              <p>$6.00</p>
-            </div>
-            <p>
-              The famous greek salad of crispy lettuce, peppers, olives and our
-              Chicago style feta cheese, garnished with crunchy garlic and
-              rosemarry croutons
+              Lemon Dessert is a zesty citrus delight, where lemon's tangy
+              embrace, sweet indulgence, and delicate layers create a heavenly
+              treat for your taste buds.
             </p>
             <h4>Order a delivery</h4>
           </div>

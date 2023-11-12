@@ -7,7 +7,6 @@
   background-color: var(--primary-color);
 }
 
-/* Header text styles */
 h1 {
   color: var(--primary-accent);
   margin-bottom: 0px;
@@ -22,7 +21,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Info part container */
 .info-part {
   flex: 1;
   font-size: 14pt;
@@ -39,10 +37,49 @@ h2 {
   z-index: auto;
 }
 
+.image-section {
+  padding-left: 100px;
+}
+
 .Image {
   flex: 1;
   position: relative;
-  z-index: 2;
+
+  left: 80px;
   display: flex;
   justify-content: flex-end;
+}
+
+.top {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .main-section {
+    padding: 5% 5%;
+  }
+
+  h1 {
+    font-size: 40pt;
+  }
+
+  h2 {
+    font-size: 20pt;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .image-section {
+    flex-direction: column;
+  }
+
+  .info-part {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .main-section {
+    flex-direction: column;
+  }
 }

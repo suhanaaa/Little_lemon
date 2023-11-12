@@ -1,4 +1,3 @@
-// Testimonials.js
 import React from "react";
 import "./Testimonials.css";
 import Profile1 from "../../assets/icons_assets/person1.png";

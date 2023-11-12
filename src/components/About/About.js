@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <main className="main-section" id="about">
-        <div>
+        <div className="info-section">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
           <p className="info-part">

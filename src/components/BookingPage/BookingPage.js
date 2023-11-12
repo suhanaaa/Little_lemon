@@ -1,5 +1,3 @@
-// BookingPage.js
-
 /* global fetchAPI, submitAPI */
 import React, { useState, useEffect } from "react";
 
@@ -16,7 +14,7 @@ const BookingPage = () => {
     "22:00",
   ]);
   const [formData, setFormData] = useState({
-    customerName: "", // Added customerName field
+    customerName: "",
     resDate: "",
     resTime: "",
     numGuests: 1,
@@ -25,10 +23,8 @@ const BookingPage = () => {
   const [showNotification, setShowNotification] = useState(false);
 
   useEffect(() => {
-    // Fetch and set initial booking data when the component mounts
     const fetchInitialData = async () => {
       try {
-        // Assume fetchBookingData is a function to fetch booking data (replace with your actual logic)
         const initialData = await fetchBookingData();
         setBookingData(initialData);
       } catch (error) {
@@ -40,9 +36,7 @@ const BookingPage = () => {
   }, []);
 
   const fetchBookingData = async () => {
-    // Placeholder implementation - replace with your actual logic
-    // For example, you can fetch data from an API
-    const response = await fetch("your_api_endpoint");
+    const response = await fetch("api_endpoint");
     const data = await response.json();
     return data;
   };
@@ -60,7 +54,6 @@ const BookingPage = () => {
   };
 
   const updateTimes = (selectedDate) => {
-    // For now, return the same available times regardless of the date
     return availableTimes;
   };
 
@@ -75,17 +68,21 @@ const BookingPage = () => {
       </div>
 
       <form className="booking-form" onSubmit={handleSubmit}>
-        {/* Input field for customer's name */}
-        <label htmlFor="customer-name">Your Name</label>
+        <label htmlFor="customer-name" aria-label="Your Name">
+          Your Name
+        </label>
         <input
           type="text"
           id="customer-name"
           name="customerName"
           value={formData.customerName}
           onChange={handleChange}
+          required
         />
 
-        <label htmlFor="res-date">Choose date</label>
+        <label htmlFor="res-date" aria-label="Choose date">
+          Choose date
+        </label>
         <input
           type="date"
           id="res-date"
@@ -94,7 +91,9 @@ const BookingPage = () => {
           onChange={handleChange}
         />
 
-        <label htmlFor="res-time">Choose time</label>
+        <label htmlFor="res-time" aria-label="Choose time">
+          Choose time
+        </label>
         <input
           type="time"
           id="res-time"
@@ -103,7 +102,9 @@ const BookingPage = () => {
           onChange={handleChange}
         />
 
-        <label htmlFor="guests">Number of guests</label>
+        <label htmlFor="guests" aria-label="Number of guests">
+          Number of guests
+        </label>
         <input
           type="number"
           placeholder="1"
@@ -115,7 +116,9 @@ const BookingPage = () => {
           onChange={handleChange}
         />
 
-        <label htmlFor="occasion">Occasion</label>
+        <label htmlFor="occasion" aria-label="Occasion">
+          Occasion
+        </label>
         <select
           id="occasion"
           name="occasion"
@@ -128,7 +131,9 @@ const BookingPage = () => {
           <option>Others</option>
         </select>
 
-        <button type="submit">Make Your reservation</button>
+        <button type="submit" aria-label="Make Your reservation">
+          Make Your reservation
+        </button>
       </form>
 
       {/* Reservation Details Card */}
