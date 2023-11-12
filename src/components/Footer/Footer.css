@@ -25,10 +25,10 @@ img {
 
 /* Info containers container */
 .info-container {
-  flex: 1; 
+  flex: 1;
   display: flex;
   justify-content: space-around;
-  margin: 0 60px 0 0px; 
+  margin: 0 60px 0 0px;
   padding-right: 0;
 }
 
@@ -113,7 +113,7 @@ a.instagram {
     padding: 20px 70px 20px 20px;
   }
   .social {
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
   }
 
   a.social {
@@ -148,4 +148,5 @@ a.instagram {
   .info,
   .info-two {
     margin-top: 10px;
+  }
 }

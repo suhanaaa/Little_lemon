@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/icons_assets/Logoo.svg";
 import Hamburger from "../../assets/icons_assets/ЁЯжЖ icon _hamburger menu.svg";
 
@@ -13,13 +14,13 @@ const Nav = () => {
 
   return (
     <nav className={`navBar ${menuOpen ? "open" : ""}`}>
-      <a href="/">
+      <Link to="/">
         <img
           src={Logo}
           alt="little-lemon logo"
           style={{ height: 50, width: 200 }}
         />
-      </a>
+      </Link>
 
       <div className="menu-icon" onClick={toggleMenu}>
         <img src={Hamburger} alt="" />
@@ -27,22 +28,22 @@ const Nav = () => {
 
       <ul className={`nav-list ${menuOpen ? "visible" : ""}`}>
         <li>
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link to="/">About</Link>
         </li>
         <li>
-          <a href="#">Menu</a>
+          <Link to="/">Menu</Link>
         </li>
         <li>
-          <a href="#">Reservations</a>
+          <Link to="/booking">Reservations</Link>
         </li>
         <li>
-          <a href="#">Order Online</a>
+          <Link to="/">Order Online</Link>
         </li>
         <li>
-          <a href="#">Login</a>
+          <Link to="/">Login</Link>
         </li>
       </ul>
     </nav>

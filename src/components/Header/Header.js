@@ -4,6 +4,8 @@ import GreekSalad from "../../assets/icons_assets/greek salad.jpg";
 import Bruchetta from "../../assets/icons_assets/bruchetta.svg";
 import LemonDessert from "../../assets/icons_assets/lemon dessert.jpg";
 import "./Header.css";
+import Testimonials from "../Testimonials/Testimonials";
+import About from "../About/About";
 
 const Header = () => {
   return (
@@ -86,6 +88,8 @@ const Header = () => {
           </div>
         </div>
       </section>
+      <Testimonials />
+      <About />
     </>
   );
 };
